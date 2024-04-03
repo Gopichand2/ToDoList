@@ -1,0 +1,28 @@
+<div class="container1">
+  <img src="https://www.thoughtco.com/thmb/b5NkbjTUGQcrUum3qotbIY63vbo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Pen-writing-notes-studying1-1ea151f6ac76428aa5f7d0c2fd245927.jpg"
+      alt="Logo" height="100px" width="100px">
+
+
+        <div class="title">
+          <h1 style="align-items: center;">My ToDo List</h1>
+        </div>
+</div>
+<div class="Panel">
+  <div class="Be">
+    <h1>Be Consistent</h1>
+  </div>
+
+  <div class="right">
+    <button class="btn btn-dark"  [routerLink]="['/Add']">Add Item</button>
+    <button class="btn btn-dark">Edit Item</button>
+    <button class="btn btn-dark" (click)="DeleteFunction()">{{ DELETE1 }}</button>
+    
+  </div>
+
+</div>
+
+
+
+<div class="TwoComp">
+  <router-outlet></router-outlet>
+</div>

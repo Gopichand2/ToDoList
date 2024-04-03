@@ -1,0 +1,27 @@
+<div class="col-Xl-10 col-sm-6 col-md-4 col-lg-3"></div>
+
+    <div class="AddNote">
+        <H1>Store Your thoughts </H1>
+    </div>
+    <div class="container">
+        <form>
+            <Label for="Title">Add Title: </Label>
+            <input class="form-control" type="text" placeholder="Enter Your Heading" #heading>
+
+            <br>
+
+            <label for="Description">Add Note:</label>
+            <textarea class="form-control" placeholder="Enter Your Notes" #description></textarea>
+        </form>
+        <br>
+
+
+        <div class="buttonCom">
+            <Button  class="btn btn-dark" (click)="onreset()">Reset</Button>
+            
+            <button class="btn btn-dark" [routerLink]="['/Home']"> Cancel</button>
+            <button [routerLink]="['/Home']" (click)="onSubmit(heading.value, description.value)"
+                class="btn btn-dark">Add Note
+            </button>
+        </div>
+    </div>

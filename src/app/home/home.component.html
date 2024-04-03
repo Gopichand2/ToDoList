@@ -1,0 +1,29 @@
+<hr>
+
+<li *ngFor="let arr of array">
+    <div class="container">
+
+        <div class="left" *ngIf="!isActice">
+            <input type="checkbox" #checkref>
+            
+
+        </div>
+
+        <div class="title">
+            {{ arr.title}}
+        </div>
+
+        <div class="desc">
+            {{arr.Description}}
+        </div>
+
+        <div class="body">
+            <div></div>
+            
+            <div class="time">
+                {{ arr.time }}
+            </div>
+        </div>
+
+    </div>
+</li>
